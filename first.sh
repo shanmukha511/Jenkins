@@ -1,3 +1,1 @@
-uptime
-whoami
 date
