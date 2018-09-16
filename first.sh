@@ -1,2 +1,3 @@
 date
 ls
+pwd
