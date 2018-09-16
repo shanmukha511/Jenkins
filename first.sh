@@ -1,3 +1,4 @@
 date
 ls
 pwd
+uptime
