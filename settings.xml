@@ -221,6 +221,12 @@ under the License.
     <activeProfile>anotherAlwaysActiveProfile</activeProfile>
   </activeProfiles>
   -->
-
+<mirrors>		
+		<mirror>					  	
+			<id>nexus</id>
+			<mirrorOf>*</mirrorOf>
+			<url>https://shanmukha.jfrog.io/shanmukha/jfrogRemote</url>
+		</mirror>
+	</mirrors> 
 
 </settings>
