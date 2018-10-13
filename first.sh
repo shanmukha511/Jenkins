@@ -1,4 +1,3 @@
 date
 ls
 uptime
-pwd
