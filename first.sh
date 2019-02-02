@@ -1,3 +1,3 @@
 uptime
 hostname
-ifconfig
+ls 
