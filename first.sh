@@ -1,1 +1,3 @@
 uptime
+hostname
+ifconfig
