@@ -1,3 +1,1 @@
-date
-ls
-
+uptime
