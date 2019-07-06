@@ -14,7 +14,7 @@ pipeline {
     stage("foo") {
       steps {
         // environment variables are not masked
-        sh 'echo "SOME_VAR is $SOME_VAR"'
+        sh 'echo "$CRED1_USR or $CRED1_PSW"'
       
 
         // credential variables will be masked in console log but not in archived file
