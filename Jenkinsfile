@@ -1,22 +1,10 @@
-Pipeline
-{
-agent none
-stages
-{
-stage('Build')
-{
-echo "Build Stage"
-sh "date"
-}
-stage('Test')
-{
-echo "Test Stage"
-sh "whoami"
-}
-stage('Deploy')
-{
-echo "Deploy"
-sh "uname"
-}
-}
+pipeline {
+    agent any 
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'Hello world!' 
+            }
+        }
+    }
 }
