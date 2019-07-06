@@ -1,3 +1,4 @@
 uptime
 uname
 ls 
+date
