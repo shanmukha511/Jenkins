@@ -1,7 +1,10 @@
 pipeline {
     agent {
-        label "UnixSlave"
-        docker { image 'node:7-alpine' }
+        
+        docker {
+            
+            label "UnixSlave"
+            image 'node:7-alpine' }
     }
     stages {
         stage('Test') {
