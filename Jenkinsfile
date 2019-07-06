@@ -8,7 +8,7 @@
 	 steps
 	 {
 	echo "Build Stage"
-	sh "date"
+	//sh "date"
 	}
 	 }
 	 }
