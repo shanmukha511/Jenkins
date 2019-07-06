@@ -1,31 +1,27 @@
-pipeline
-{
-agent any
-stages
-{
-stage('Build')
-{
-steps
-{
-echo "Build Stage"
-sh "date"
-}
-}
-stage('Test')
-{
-steps
-{
-echo "Test Stage"
-sh "whoami"
-}
-}
-stage('Deploy')
-{
-steps
-{
-echo "Deploy"
-sh "uname"
-}
-}
-}
+pipeline {
+  environment {
+   
+    // this assumes that "cred1" has been created on Jenkins Credentials
+    CRED1 = credentials("Unix Slave Cred1")
+    INBETWEEN = "Something in between"
+    // this assumes that "cred2" has been created in Jenkins Credentials
+    
+  }
+
+  agent any
+
+  stages {
+    stage("foo") {
+      steps {
+        // environment variables are not masked
+        sh 'echo "SOME_VAR is $SOME_VAR"'
+      
+
+        // credential variables will be masked in console log but not in archived file
+        sh 'echo $CRED1 > cred1.txt'
+        sh 'echo $CRED2 > cred2.txt'
+        archive "**/*.txt"
+      }
+    }
+  }
 }
