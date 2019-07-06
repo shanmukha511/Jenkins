@@ -1,3 +1,3 @@
 uptime
-hostname
+uname
 ls 
