@@ -3,7 +3,7 @@ pipeline {
         
         docker {
             
-            label "UnixSlave"
+            
             image 'node:7-alpine' }
     }
     stages {
