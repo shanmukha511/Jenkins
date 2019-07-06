@@ -11,19 +11,5 @@
 	sh "date"
 	}
 	 }
-	stage('Test')
-	  {
-	  steps{
-	echo "Test Stage"
-	sh "whoami"
-	  }
-	  }
-	stage('Deploy')
-	 {
-	 steps{
-	echo "Deploy"
-	sh "uname"
 	 }
-	 }
-	}
 	}
